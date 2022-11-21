@@ -1,0 +1,14 @@
+<%- include('./templates/header')  %> 
+<!-- metemos el header -->
+<main class="container">
+    <h1 class="text-center mb-5">Añadir Servicio</h1>
+    <form action="./nuevo" method="POST">
+        <input type="text" id="nombre" name="nombre" placeholder="servicio" class="form-control mb-2">
+        <textarea name="comentario" id="comentario" rows="10" placeholder="descripcion del servicio" class="form-control mb-2"></textarea>
+        <div class="d-grid">
+            <button type="submit" class="btn btn-danger">Añadir servicio</button>
+        </div>
+    </form>
+</main>
+<%- include('./templates/footer')  %> 
+<!-- metemos el footer -->
